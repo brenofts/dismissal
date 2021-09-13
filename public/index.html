@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brasilia International School</title>
+</head>
+<body>
+  <span id="connecting">Connecting...</span>
+  <div class="main hidden">
+    <div class="start-menu" id="start-menu">
+      <div id="car-line" onclick="open_car_line()">Car line</div>
+      <div id="teacher" onclick="open_class_list()">Teacher</div>
+    </div>
+    <div class="car-line-grid hidden" id="car-line-grid">
+      <div class="back-button" onclick="back()"><< Home</div>
+      <div id="select-date">
+        <input type="date" name="date" id="car-line-date">
+      <button id="car-line-btn-date">OK</button>
+      </div>
+      <div class="car-numbers"></div>
+      <div class="car-line"></div>
+    </div>
+    <div class="class-list hidden" id="class-list">
+      <div class="back-button" onclick="back()"><< Home</div>
+      
+      <div class="class-list-item" id="pre-k">Pre-K</div>
+      <div class="class-list-item" id="k-garten">Kinder Garten</div>
+      <div class="class-list-item" id="elem-1">Elem. 1st</div>
+      <div class="class-list-item" id="elem-2">Elem. 2nd</div>
+      <div class="class-list-item" id="elem-3">Elem. 3rd</div>
+      <div class="class-list-item" id="elem-4">Elem. 4th</div>
+      <div class="class-list-item" id="elem-5">Elem. 5th</div>
+      
+      
+      <div class="class-list-item" id="pre-k">Pre-K</div>
+      <div class="class-list-item" id="k-garten">Kinder Garten</div>
+      <div class="class-list-item" id="elem-1">Elem. 1st</div>
+      <div class="class-list-item" id="elem-2">Elem. 2nd</div>
+      <div class="class-list-item" id="elem-3">Elem. 3rd</div>
+      <div class="class-list-item" id="elem-4">Elem. 4th</div>
+      <div class="class-list-item" id="elem-5">Elem. 5th</div>
+      
+      <div class="class-list-item" id="elem-6">Elem. 6th</div>
+      <div class="class-list-item" id="elem-7">Elem. 7th</div>
+      <div class="class-list-item" id="elem-8">Elem. 8th</div>
+      
+    </div>
+  </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCgHO1RgqYF87z6Hmd3eHnbIpokUYfucSY",
+      authDomain: "dismissal-2021.firebaseapp.com",
+      databaseURL: "https://dismissal-2021-default-rtdb.firebaseio.com",
+      projectId: "dismissal-2021",
+      storageBucket: "dismissal-2021.appspot.com",
+      messagingSenderId: "58607818564",
+      appId: "1:58607818564:web:33922f40b5b3829a0de911"
+      }
+  
+      firebase.initializeApp(firebaseConfig)
+  
+      const database = firebase.database()
+    </script>
+    <script src="scripts.js"></script>
+  
+</body>
+</html>

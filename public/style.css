@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 15pt;
+  text-transform: uppercase;
+  border-radius: 3px;
+  user-select: none;
+  letter-spacing: 1.5pt;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  background: rgb(0,168,107);
+  background: linear-gradient(180deg, rgba(0,168,107,1) 35%, rgb(0, 138, 87) 100%);
+}
+
+#connecting {
+  color: white;
+  font-family: monospace;
+  font-size: 8pt;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  padding: 20px;
+  color: white;  width: 100%;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.1)
+}
+
+.start-menu {
+  background-color: rgba(0, 168, 106, 0.4);
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.start-menu div {
+  background-color: gray;
+  height: 30%;
+  width: 75%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+
+.start-menu div:hover {
+  opacity: .8;
+}
+
+.car-numbers, .car-line {
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.car-number{
+  font-size: 20pt;
+  padding: 5px 15px;
+  margin: 2px;
+  border: 1px dotted rgba(255, 255, 255, 0.226);
+  background-color: rgba(0, 117, 74, 0.719);
+  cursor: pointer;
+}
+
+.car-number:hover{
+  background-color: rgba(255, 255, 255, 0.089);
+}
+
+.car-line-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.class-list {
+  position: static;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  width: 97%;
+}
+
+#select-date {
+  display: flex;
+  margin-top: 80px;
+}
+
+.car-line-grid input {
+  padding: 3px 8px;
+}
+
+.car-line-grid button {
+  color: white;
+  background-color: grey;
+  padding: 15px 15px;
+  margin-left: 7px;
+}
+
+.car-line-grid button:active {
+  color: black;
+}
+
+.car-line-item, .class-list-item {
+  font-size: 14pt;
+  padding: 8px 15px;
+  margin: 2px;
+  border: 1px dotted rgba(255, 255, 255, 0.226);
+  background-color: rgba(0, 45, 168, 0.4);
+  color: white;
+  cursor: pointer;
+}
+
+.class-list-item {
+  font-size: 16pt;
+  margin: 5px;
+}
+
+.car-line-item:hover, .class-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+
+
+
+.hidden {
+  display: none;
+}
