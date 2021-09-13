@@ -83,13 +83,19 @@ body {
   padding: 10px;
 }
 
+.car-line {
+  width: min-content;
+}
+
 .car-number{
-  font-size: 20pt;
+  font-size: 15pt;
   padding: 5px 15px;
+  min-width: 59px;
   margin: 2px;
   border: 1px dotted rgba(255, 255, 255, 0.226);
   background-color: rgba(0, 117, 74, 0.719);
   cursor: pointer;
+  text-align: center;
 }
 
 .car-number:hover{
@@ -133,22 +139,24 @@ body {
 }
 
 .car-line-item, .class-list-item {
-  font-size: 14pt;
+  font-size: 10pt;
   padding: 8px 15px;
   margin: 2px;
   border: 1px dotted rgba(255, 255, 255, 0.226);
   background-color: rgba(0, 45, 168, 0.4);
   color: white;
   cursor: pointer;
+  width: max-content;
+  max-width: 90vw;
 }
 
 .class-list-item {
-  font-size: 16pt;
+  font-size: 10pt;
   margin: 5px;
 }
 
 .car-line-item:hover, .class-list-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 45, 168, 0.651);
 }
 
 

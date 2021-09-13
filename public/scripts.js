@@ -24,6 +24,14 @@ function back() {
 function open_car_line() {
 	hide(start_menu)
 	show(car_line_grid)
+
+	var year = new Date().getFullYear()
+	var month = new Date().getMonth() + 1
+	month < 10 ? month = '0' + month.toString() : null
+	console.log(month)
+	var day = new Date().getDate()
+	var today = year + '-' + month + '-' + day
+	document.getElementById('car-line-date').value = today
 }
 function open_class_list() {
 	hide(start_menu)
