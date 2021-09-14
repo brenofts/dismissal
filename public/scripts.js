@@ -128,13 +128,14 @@ function car_arrived(number, date) {
 		})
 		.then(() => {
 			let time = new Date(now).toLocaleTimeString()
-			let register = number + ' | ' + names.toString() + ' | ' + time
+			let register = number + ' | ' + names.toString().replaceAll(',', ', ') + ' | ' + time
 			history.push(register)
 			let item = `<div class="car-line-item">${register}</div>`
 			var pre = document.querySelector('.car-line').innerHTML
 			document.querySelector('.car-line').innerHTML = ''
 			document.querySelector('.car-line').innerHTML += item + pre
 			database.ref('carlines/' + date + '/history').set(history)
+			window.scrollTo({top:0, behavior: 'smooth'})
 		})
 		.catch(e => alert(e.message))
 }
